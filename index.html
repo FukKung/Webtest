@@ -1,1 +1,31 @@
-
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เสื้อผ้า</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>ร้านขายเสื้อ</h1>
+    </header>
+    <main>
+        <div class="product">
+            <div class="image-container">
+                <img src="image/front.jpg" alt="หน้าเสื้อ" class="product-image" style="margin-right: 20px;">
+                <button class="zoom-button">กดเพื่อดูรูป</button>
+            </div>
+            <div class="image-container">
+                <img src="image/back.jpg" alt="หลังเสื้อ" class="product-image">
+                <button class="zoom-button">กดเพื่อดูรูป</button>
+            </div>
+        </div>
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img id="modalImage" src="" alt="Zoomed Image">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
